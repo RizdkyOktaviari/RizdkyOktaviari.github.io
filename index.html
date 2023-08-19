@@ -73,14 +73,18 @@
                   <a class="nav-link" href="#about" id="scrollButton">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#experience" id="scrollButton2">Experience</a>
+                  <a class="nav-link" href="#experience" id="scrollButton2"
+                    >Experience</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#portofolio" id="scrollButton3">Portfolio</a>
+                  <a class="nav-link" href="#portofolio" id="scrollButton3"
+                    >Portfolio</a
+                  >
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="#">Contact</a>
                 </li>
               </ul>
             </div>
@@ -101,7 +105,12 @@
                 <h1 class="text-uppercase">I am Rizdky Oktaviari P.P</h1>
                 <h5 class="text-uppercase">Junior Software Engineer</h5>
                 <div class="d-flex align-items-center">
-                  <a class="primary_btn" href="#"><span>Hire Me</span></a>
+                  <a
+                    class="primary_btn"
+                    href="https://www.linkedin.com/in/rizdky-oktaviari-449815231/"
+                    target="_blank"
+                    ><span>Hire Me</span></a
+                  >
                   <a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>
                 </div>
               </div>
@@ -254,7 +263,7 @@
     <!--================ End Brand Area =================-->
 
     <!--================ Start Features Area =================-->
-    
+
     <section class="features_area" id="targetDiv2">
       <div class="container">
         <div class="row justify-content-center">
@@ -524,15 +533,11 @@
         </div>
         <div class="row footer_bottom justify-content-center">
           <p class="col-lg-8 col-sm-12 footer-text">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;
             <script>
               document.write(new Date().getFullYear());
             </script>
-            All rights reserved | This template is made with
-            <i class="fa fa-heart-o" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Made by Ky
           </p>
         </div>
       </div>
@@ -701,26 +706,18 @@
 
     <script>
       // Add a click event listener to the trigger elements
-      const scrollButton = document.getElementById("scrollButton");
-      const targetDiv = document.getElementById("targetDiv");
+      function setupScrollButton(buttonId, targetId) {
+        const scrollButton = document.getElementById(buttonId);
+        const targetDiv = document.getElementById(targetId);
 
-      const scrollButton2 = document.getElementById("scrollButton2");
-      const targetDiv2 = document.getElementById("targetDiv2");
+        scrollButton.addEventListener("click", function () {
+          targetDiv.scrollIntoView({ behavior: "smooth" });
+        });
+      }
 
-      const scrollButton3 = document.getElementById("scrollButton3");
-      const targetDiv3 = document.getElementById("targetDiv3");
-
-      scrollButton.addEventListener("click", function () {
-        targetDiv.scrollIntoView({ behavior: "smooth" });
-      });
-
-      scrollButton2.addEventListener("click", function () {
-        targetDiv2.scrollIntoView({ behavior: "smooth" });
-      });
-
-      scrollButton3.addEventListener("click", function () {
-        targetDiv3.scrollIntoView({ behavior: "smooth" });
-      });
+      setupScrollButton("scrollButton", "targetDiv");
+      setupScrollButton("scrollButton2", "targetDiv2");
+      setupScrollButton("scrollButton3", "targetDiv3");
 
       $(".single-brand-item").on("click", function () {
         // Get the data-modal attribute value
