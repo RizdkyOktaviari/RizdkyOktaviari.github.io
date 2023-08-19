@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" href="img/favicon.png" type="image/png" />
-    <title>Satner Portfolio</title>
+    <title>Rizdky Oktaviari Portfolio</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="vendors/linericon/style.css" />
@@ -18,6 +18,25 @@
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .text-center {
+        text-align: center;
+      }
+
+      .award-title {
+        font-size: 14px; /* Ubah ukuran font sesuai keinginan */
+        font-weight: normal;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif; /* Ganti jenis font sesuai keinginan */
+        color: #a7a7a7; /* Ubah warna font sesuai keinginan */
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.99),
+          color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.99);
+      }
+      .award-title:hover {
+        color: #767171; /* Ubah warna sesuai keinginan */
+        transform: scale(1.05);
+      }
+    </style>
   </head>
 
   <body>
@@ -51,30 +70,15 @@
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="#about" id="scrollButton">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="services.html">Services</a>
+                  <a class="nav-link" href="#experience" id="scrollButton2">Experience</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  <a class="nav-link" href="#portofolio" id="scrollButton3">Portfolio</a>
                 </li>
-                <!-- <li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Portfolio Details</a></li>
-								</ul>
-							</li> -->
-                <!-- <li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-								</ul>
-							</li> -->
+
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
                 </li>
@@ -114,7 +118,7 @@
     <!--================ End Home Banner Area =================-->
 
     <!--================ Start About Us Area =================-->
-    <section class="about_area section_gap">
+    <section class="about_area section_gap" id="targetDiv">
       <div class="container">
         <div class="row justify-content-start align-items-center">
           <div class="col-lg-5">
@@ -173,7 +177,12 @@
                   data-modal="exampleModalCenter"
                 >
                   <div class="d-table-cell text-center">
-                    <img src="img/brands/logo1.png" alt="" />
+                    <!-- <img src="img/brands/logo1.png" alt="" /> -->
+                    <div class="container">
+                      <div class="award-title">
+                        Gold Award in Idea Regeneration Expo 2023
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -183,7 +192,12 @@
                   data-modal="exampleModalCenter2"
                 >
                   <div class="d-table-cell text-center">
-                    <img src="img/brands/logo2.png" alt="" />
+                    <!-- <img src="img/brands/logo2.png" alt="" /> -->
+                    <div class="container">
+                      <div class="award-title">
+                        1st Place at Epim Expo HMJ TI Website Category
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -193,7 +207,11 @@
                   data-modal="exampleModalCenter3"
                 >
                   <div class="d-table-cell text-center">
-                    <img src="img/brands/logo3.png" alt="" />
+                    <div class="container">
+                      <div class="award-title">
+                        1st Runner up IT Product Expo in JTI Polije
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -203,57 +221,11 @@
                   data-modal="exampleModalCenter4"
                 >
                   <div class="d-table-cell text-center">
-                    <img src="img/brands/logo4.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div
-                  class="single-brand-item d-table"
-                  data-modal="exampleModalCenter5"
-                >
-                  <div class="d-table-cell text-center">
-                    <img src="img/brands/logo5.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div
-                  class="single-brand-item d-table"
-                  data-modal="exampleModalCenter6"
-                >
-                  <div class="d-table-cell text-center">
-                    <img src="img/brands/logo6.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div
-                  class="single-brand-item d-table"
-                  data-modal="exampleModalCenter7"
-                >
-                  <div class="d-table-cell text-center">
-                    <img src="img/brands/logo7.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div
-                  class="single-brand-item d-table"
-                  data-modal="exampleModalCenter8"
-                >
-                  <div class="d-table-cell text-center">
-                    <img src="img/brands/logo8.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div
-                  class="single-brand-item d-table"
-                  data-modal="exampleModalCenter9"
-                >
-                  <div class="d-table-cell text-center">
-                    <img src="img/brands/logo9.png" alt="" />
+                    <div class="container">
+                      <div class="award-title">
+                        2nd Place at Business Plan Competition 2021
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -262,16 +234,16 @@
           <div class="offset-lg-2 col-lg-4 col-md-6">
             <div class="client-info">
               <div class="d-flex mb-50">
-                <span class="lage">10</span>
-                <span class="smll">Years Experience Working</span>
+                <span class="lage">My</span>
+                <span class="smll">Award & Achievement</span>
               </div>
               <div class="call-now d-flex">
                 <div>
-                  <span class="fa fa-phone"></span>
+                  <span class="fa fa-envelope"></span>
                 </div>
                 <div class="ml-15">
-                  <p>call us now</p>
-                  <h3>(+1)-800-555-6789</h3>
+                  <p>Contact me now</p>
+                  <h3>KudaBerkuda@gmail.com</h3>
                 </div>
               </div>
             </div>
@@ -282,16 +254,19 @@
     <!--================ End Brand Area =================-->
 
     <!--================ Start Features Area =================-->
-    <section class="features_area">
+    
+    <section class="features_area" id="targetDiv2">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <div class="main_title">
-              <h2>service offers</h2>
+              <h2>Experience</h2>
               <p>
-                Is give may shall likeness made yielding spirit a itself togeth
-                created after sea <br />
-                is in beast beginning signs open god you're gathering ithe
+                I have practical experience in creating mobile applications
+                using Flutter and Kotlin. Moreover, I have worked on developing
+                websites using PHP, Laravel, and the .NET Core Framework.
+                Additionally, I have been engaged in the field of machine
+                learning development.
               </p>
             </div>
           </div>
@@ -300,40 +275,40 @@
           <div class="col-lg-3 col-md-6">
             <div class="feature_item">
               <img src="img/services/s1.png" alt="" />
-              <h4>Wp developing</h4>
+              <h4>Web Development</h4>
               <p>
-                Creeping for female light years that lesser can't evening heaven
-                isn't bearing tree
+                "I have hands-on experience in developing websites using PHP,
+                Laravel, and .NET."
               </p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="feature_item">
               <img src="img/services/s2.png" alt="" />
-              <h4>UI/ux design</h4>
+              <h4>Mobile App Development</h4>
               <p>
-                Creeping for female light years that lesser can't evening heaven
-                isn't bearing tree
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="feature_item">
-              <img src="img/services/s3.png" alt="" />
-              <h4>Web design</h4>
-              <p>
-                Creeping for female light years that lesser can't evening heaven
-                isn't bearing tree
+                "I possess experience in developing mobile apps using Flutter
+                and Kotlin."
               </p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="feature_item">
               <img src="img/services/s4.png" alt="" />
-              <h4>seo optimize</h4>
+              <h4>ML Development</h4>
               <p>
-                Creeping for female light years that lesser can't evening heaven
-                isn't bearing tree
+                "I have hands-on experience with Python for developing machine
+                learning and deep learning models."
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/services/s3.png" alt="" />
+              <h4>Arduino IDE</h4>
+              <p>
+                "I have practical experience in creating embedded systems with
+                Arduino."
               </p>
             </div>
           </div>
@@ -344,12 +319,12 @@
 
     <!--================Start Portfolio Area =================-->
     <section class="portfolio_area" id="portfolio">
-      <div class="container">
+      <div class="container" id="targetDiv3">
         <div class="row">
           <div class="col-lg-12">
             <div class="main_title text-left">
               <h2>
-                quality work <br />
+                My Portfolio <br />
                 Recently done project
               </h2>
             </div>
@@ -358,180 +333,143 @@
         <div class="filters portfolio-filter">
           <ul>
             <li class="active" data-filter="*">all</li>
-            <li data-filter=".popular">popular</li>
             <li data-filter=".latest">latest</li>
-            <li data-filter=".following">following</li>
             <li data-filter=".upcoming">upcoming</li>
           </ul>
         </div>
 
         <div class="filters-content">
           <div class="row portfolio-grid justify-content-center">
-            <div class="col-lg-4 col-md-6 all latest">
-              <div class="portfolio_box">
-                <div class="single_portfolio">
-                  <img
-                    class="img-fluid w-100"
-                    src="img/portfolio/p1.jpg"
-                    alt=""
-                  />
-                  <div class="overlay"></div>
-                  <a href="img/portfolio/p1.jpg" class="img-gal">
-                    <div class="icon">
-                      <span class="lnr lnr-cross"></span>
-                    </div>
-                  </a>
-                </div>
-                <div class="short_info">
-                  <h4><a href="#">minimal design</a></h4>
-                  <p>Animated, portfolio</p>
-                </div>
-              </div>
-            </div>
             <div class="col-lg-4 col-md-6 all popular">
               <div class="portfolio_box">
                 <div class="single_portfolio">
                   <img
                     class="img-fluid w-100"
-                    src="img/portfolio/p2.jpg"
+                    src="img/portfolio/p4.png"
                     alt=""
                   />
                   <div class="overlay"></div>
-                  <a href="img/portfolio/p2.jpg" class="img-gal">
+                  <a href="img/portfolio/p4.png" class="img-gal">
                     <div class="icon">
                       <span class="lnr lnr-cross"></span>
                     </div>
                   </a>
                 </div>
                 <div class="short_info">
-                  <h4><a href="#">Paint wall</a></h4>
-                  <p>Animated, portfolio</p>
+                  <h4><a href="#">Popular Fruit v2</a></h4>
+                  <p>Deep Learning, CNN, Python, Flask, Flutter</p>
                 </div>
               </div>
             </div>
+
             <div class="col-lg-4 col-md-6 all latest">
               <div class="portfolio_box">
                 <div class="single_portfolio">
                   <img
                     class="img-fluid w-100"
-                    src="img/portfolio/p3.jpg"
+                    src="img/portfolio/p3.png"
                     alt=""
                   />
                   <div class="overlay"></div>
-                  <a href="img/portfolio/p3.jpg" class="img-gal">
+                  <a href="img/portfolio/p3.png" class="img-gal">
                     <div class="icon">
                       <span class="lnr lnr-cross"></span>
                     </div>
                   </a>
                 </div>
                 <div class="short_info">
-                  <h4><a href="#">female light</a></h4>
-                  <p>Animated, portfolio</p>
+                  <h4><a href="#">Popular Fruit v1</a></h4>
+                  <p>Machine Learning, KNN, Features Extraction, Python</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 all popular">
-              <div class="portfolio_box">
-                <div class="single_portfolio">
-                  <img
-                    class="img-fluid w-100"
-                    src="img/portfolio/p4.jpg"
-                    alt=""
-                  />
-                  <div class="overlay"></div>
-                  <a href="img/portfolio/p4.jpg" class="img-gal">
-                    <div class="icon">
-                      <span class="lnr lnr-cross"></span>
-                    </div>
-                  </a>
-                </div>
-                <div class="short_info">
-                  <h4><a href="#">fourth air</a></h4>
-                  <p>Animated, portfolio</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 all following">
-              <div class="portfolio_box">
-                <div class="single_portfolio">
-                  <img
-                    class="img-fluid w-100"
-                    src="img/portfolio/p6.jpg"
-                    alt=""
-                  />
-                  <div class="overlay"></div>
-                  <a href="img/portfolio/p5.jpg" class="img-gal">
-                    <div class="icon">
-                      <span class="lnr lnr-cross"></span>
-                    </div>
-                  </a>
-                </div>
-                <div class="short_info">
-                  <h4><a href="#">together sign</a></h4>
-                  <p>Animated, portfolio</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 all upcoming">
-              <div class="portfolio_box">
-                <div class="single_portfolio">
-                  <img
-                    class="img-fluid w-100"
-                    src="img/portfolio/p5.jpg"
-                    alt=""
-                  />
-                  <div class="overlay"></div>
-                  <a href="img/portfolio/p6.jpg" class="img-gal">
-                    <div class="icon">
-                      <span class="lnr lnr-cross"></span>
-                    </div>
-                  </a>
-                </div>
-                <div class="short_info">
-                  <h4><a href="#">multiply fowl</a></h4>
-                  <p>Animated, portfolio</p>
-                </div>
-              </div>
-            </div>
+
             <div class="col-lg-4 col-md-6 all upcoming following">
               <div class="portfolio_box">
                 <div class="single_portfolio">
                   <img
                     class="img-fluid w-100"
-                    src="img/portfolio/p7.jpg"
+                    src="img/portfolio/p7.png"
                     alt=""
                   />
                   <div class="overlay"></div>
-                  <a href="img/portfolio/p7.jpg" class="img-gal">
+                  <a href="img/portfolio/p7.png" class="img-gal">
                     <div class="icon">
                       <span class="lnr lnr-cross"></span>
                     </div>
                   </a>
                 </div>
                 <div class="short_info">
-                  <h4><a href="#">green heaven</a></h4>
-                  <p>Animated, portfolio</p>
+                  <h4>
+                    <a href="#">EM Information System</a>
+                  </h4>
+                  <p>Website, Microservices, ASP.Net, .Net Core</p>
                 </div>
               </div>
             </div>
+
+            <div class="col-lg-4 col-md-6 all latest">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/portfolio/p1.png"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/p1.png" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="#">Mosomo</a></h4>
+                  <p>Embedded System, Arduino IDE</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 all latest">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/portfolio/p2.png"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/p2.png" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="#">Packlese</a></h4>
+                  <p>Website, PHP, Laravel, Kotlin</p>
+                </div>
+              </div>
+            </div>
+
             <div class="col-lg-4 col-md-6 all following">
               <div class="portfolio_box">
                 <div class="single_portfolio">
                   <img
                     class="img-fluid w-100"
-                    src="img/portfolio/p8.jpg"
+                    src="img/portfolio/p5.png"
                     alt=""
                   />
                   <div class="overlay"></div>
-                  <a href="img/portfolio/p8.jpg" class="img-gal">
+                  <a href="img/portfolio/p5.png" class="img-gal">
                     <div class="icon">
                       <span class="lnr lnr-cross"></span>
                     </div>
                   </a>
                 </div>
                 <div class="short_info">
-                  <h4>fly male</h4>
-                  <p>Animated, portfolio</p>
+                  <h4><a href="#">Request</a></h4>
+                  <p>Website, PHP</p>
                 </div>
               </div>
             </div>
@@ -540,19 +478,21 @@
                 <div class="single_portfolio">
                   <img
                     class="img-fluid w-100"
-                    src="img/portfolio/p9.jpg"
+                    src="img/portfolio/p6.png"
                     alt=""
                   />
                   <div class="overlay"></div>
-                  <a href="img/portfolio/p9.jpg" class="img-gal">
+                  <a href="img/portfolio/p6.png" class="img-gal">
                     <div class="icon">
                       <span class="lnr lnr-cross"></span>
                     </div>
                   </a>
                 </div>
                 <div class="short_info">
-                  <h4><a href="#">season face</a></h4>
-                  <p>Animated, portfolio</p>
+                  <h4>
+                    <a href="#">High School Profile Information System</a>
+                  </h4>
+                  <p>Website, PHP, Laravel</p>
                 </div>
               </div>
             </div>
@@ -560,132 +500,6 @@
         </div>
       </div>
     </section>
-    <!--================End Portfolio Area =================-->
-
-    <!--================ Start Testimonial Area =================-->
-    <!-- <div class="testimonial_area section_gap_bottom">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>client say about me</h2>
-						<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
-							 beginning signs open god you're gathering ithe</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="testi_slider owl-carousel">
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-			</div>
-		</div>
-	</div> -->
-    <!--================ End Testimonial Area =================-->
-
-    <!--================ Start Newsletter Area =================-->
-    <!-- <section class="newsletter_area">
-		<div class="container">
-			<div class="row justify-content-center align-items-center">
-				<div class="col-lg-12">
-					<div class="subscription_box text-center">
-						<h2 class="text-uppercase text-white">get update from anywhere</h2>
-						<p class="text-white">
-							Bearing Void gathering light light his eavening unto dont afraid. 
-						</p>
-						<div class="subcribe-form" id="mc_embed_signup">
-							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
-								<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
-								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-								</div>
-								<button class="primary-btn hover d-inline">Get Started</button>
-								<div class="info"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-    <!--================ End Newsletter Area =================-->
 
     <!--================Footer Area =================-->
     <footer class="footer_area">
@@ -722,6 +536,7 @@
           </p>
         </div>
       </div>
+      <!-- modal 1 start -->
       <div
         class="modal fade"
         id="exampleModalCenter"
@@ -734,7 +549,8 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalCenterTitle">
-                Modal title
+                Gold Award in Idea Regeneration Expo 2023 In Management and
+                Science University
               </h5>
               <button
                 type="button"
@@ -745,59 +561,13 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">...</div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
+            <div class="modal-body">
+              <img class="img-fluid w-100" src="img/awards/a1.jpg" alt="" />
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal of Certificate-->
-      <div
-        class="modal fade"
-        id="exampleModalCenter"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">
-                Modal title 1
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">...</div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
+              <a class="primary_btn tr-bg" href="#" data-dismiss="modal"
+                ><span>Close</span></a
               >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
             </div>
           </div>
         </div>
@@ -815,7 +585,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalCenter2Title">
-                Modal title 2
+                1st Place at Epim Expo HMJ TI Website Category
               </h5>
               <button
                 type="button"
@@ -826,18 +596,13 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">...</div>
+            <div class="modal-body">
+              <img class="img-fluid w-100" src="img/awards/a2.jpg" alt="" />
+            </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
+              <a class="primary_btn tr-bg" href="#" data-dismiss="modal"
+                ><span>Close</span></a
               >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
             </div>
           </div>
         </div>
@@ -855,7 +620,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalCenter3Title">
-                Modal title 2
+                1st Runner up IT Product Expo in JTI Polije
               </h5>
               <button
                 type="button"
@@ -866,18 +631,13 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">...</div>
+            <div class="modal-body">
+              <img class="img-fluid w-100" src="img/awards/a3.jpg" alt="" />
+            </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
+              <a class="primary_btn tr-bg" href="#" data-dismiss="modal"
+                ><span>Close</span></a
               >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
             </div>
           </div>
         </div>
@@ -895,7 +655,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalCenter4Title">
-                Modal title 2
+                2nd Place at Business Plan Competition 2021 Tingkat Jawa Timur
               </h5>
               <button
                 type="button"
@@ -906,222 +666,17 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">...</div>
+            <div class="modal-body">
+              <img class="img-fluid w-100" src="img/awards/a4.jpg" alt="" />
+            </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
+              <a class="primary_btn tr-bg" href="#" data-dismiss="modal"
+                ><span>Close</span></a
               >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
             </div>
           </div>
         </div>
       </div>
-
-      <div
-      class="modal fade"
-      id="exampleModalCenter5"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenter5Title"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenter5Title">
-              Modal title 2
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">
-              Save changes
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-    class="modal fade"
-    id="exampleModalCenter6"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="exampleModalCenter6Title"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenter6Title">
-            Modal title 2
-          </h5>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">...</div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-dismiss="modal"
-          >
-            Close
-          </button>
-          <button type="button" class="btn btn-primary">
-            Save changes
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div
-  class="modal fade"
-  id="exampleModalCenter7"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalCenter7Title"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenter7Title">
-          Modal title 2
-        </h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">...</div>
-      <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-secondary"
-          data-dismiss="modal"
-        >
-          Close
-        </button>
-        <button type="button" class="btn btn-primary">
-          Save changes
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div
-class="modal fade"
-id="exampleModalCenter8"
-tabindex="-1"
-role="dialog"
-aria-labelledby="exampleModalCenter8Title"
-aria-hidden="true"
->
-<div class="modal-dialog modal-dialog-centered" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalCenter8Title">
-        Modal title 2
-      </h5>
-      <button
-        type="button"
-        class="close"
-        data-dismiss="modal"
-        aria-label="Close"
-      >
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">...</div>
-    <div class="modal-footer">
-      <button
-        type="button"
-        class="btn btn-secondary"
-        data-dismiss="modal"
-      >
-        Close
-      </button>
-      <button type="button" class="btn btn-primary">
-        Save changes
-      </button>
-    </div>
-  </div>
-</div>
-</div>
-
-<div
-class="modal fade"
-id="exampleModalCenter9"
-tabindex="-1"
-role="dialog"
-aria-labelledby="exampleModalCenter9Title"
-aria-hidden="true"
->
-<div class="modal-dialog modal-dialog-centered" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalCenter9Title">
-        Modal title 2
-      </h5>
-      <button
-        type="button"
-        class="close"
-        data-dismiss="modal"
-        aria-label="Close"
-      >
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">...</div>
-    <div class="modal-footer">
-      <button
-        type="button"
-        class="btn btn-secondary"
-        data-dismiss="modal"
-      >
-        Close
-      </button>
-      <button type="button" class="btn btn-primary">
-        Save changes
-      </button>
-    </div>
-  </div>
-</div>
-</div>
     </footer>
     <!--================End Footer Area =================-->
 
@@ -1146,6 +701,27 @@ aria-hidden="true"
 
     <script>
       // Add a click event listener to the trigger elements
+      const scrollButton = document.getElementById("scrollButton");
+      const targetDiv = document.getElementById("targetDiv");
+
+      const scrollButton2 = document.getElementById("scrollButton2");
+      const targetDiv2 = document.getElementById("targetDiv2");
+
+      const scrollButton3 = document.getElementById("scrollButton3");
+      const targetDiv3 = document.getElementById("targetDiv3");
+
+      scrollButton.addEventListener("click", function () {
+        targetDiv.scrollIntoView({ behavior: "smooth" });
+      });
+
+      scrollButton2.addEventListener("click", function () {
+        targetDiv2.scrollIntoView({ behavior: "smooth" });
+      });
+
+      scrollButton3.addEventListener("click", function () {
+        targetDiv3.scrollIntoView({ behavior: "smooth" });
+      });
+
       $(".single-brand-item").on("click", function () {
         // Get the data-modal attribute value
         var targetModal = $(this).data("modal");
